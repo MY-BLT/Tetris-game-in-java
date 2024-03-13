@@ -21,7 +21,7 @@ public class Board {
     private int startRow;
 
     /**
-     * <p>Initialize at first of every part</>
+     * <p>Initialize at first of every part</p>
      * @param shape the random shape that is created
      * @param column column of the  shape 
      * @param row  row of the shape

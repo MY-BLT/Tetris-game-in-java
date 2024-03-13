@@ -11,8 +11,10 @@ public class Shape {
         private boolean[][] shape;
 
         public void setShape () {
-            row = random.nextInt(5) + 1;
-            column = random.nextInt(5) + 1;
+            do {
+                row = random.nextInt(1, 5) + 1;
+                column = random.nextInt(1, 5) + 1;
+            } while (row + column > 7);
             mainColumn = random.nextInt(column);
             mainRow = random.nextInt(row);
 
