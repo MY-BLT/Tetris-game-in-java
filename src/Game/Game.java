@@ -2,31 +2,8 @@ package Game;
 
 import java.util.Scanner;
 
-//class Position {
-//    int value;
-//
-//    public Position(int value) {
-//        this.value = value;
-//    }
-//
-//    public void setValue(int value) {
-//        this.value = value;
-//    }
-//
-//    public int getValue() {
-//        return value;
-//    }
-//
-//    public void reduceValue() {
-//        value--;
-//    }
-//
-//    public void increaseValue() {
-//        value++;
-//    }
-//}
-
 /**
+ * @author M.Yasin B.Loghmani.T
  * This class is responsible for updating the board and executing actions on the
  * board during the game.
  */
@@ -251,7 +228,7 @@ public class Game {
             case MOVE_LEFT:
                 for (int i = topShape; i < topShape + row; i++) {
                     for (int j = leftShape; j < leftShape + column; j++) {
-                        if (currentBoard[i][j] == SHAPE_CELL && currentBoard[i][j - 1] == FULL_CELL)
+                        if (leftShape - 1 == 0 || currentBoard[i][j] == SHAPE_CELL && currentBoard[i][j - 1] == FULL_CELL)
                             return false;
                     }
                 }
@@ -259,7 +236,7 @@ public class Game {
             case MOVE_RIGHT:
                 for (int i = topShape; i < topShape + row; i++) {
                     for (int j = leftShape; j < leftShape + column; j++) {
-                        if (currentBoard[i][j] == SHAPE_CELL && currentBoard[i][j + 1] == FULL_CELL)
+                        if (leftShape + column + 1 == width || currentBoard[i][j] == SHAPE_CELL && currentBoard[i][j + 1] == FULL_CELL)
                             return false;
                     }
                 }
@@ -645,10 +622,6 @@ public class Game {
                 isRotate = true;
             }
         }
-        // if (isRotate) {
-        // // left.setValue(left.getValue() + column / 2);
-        // // top.setValue(top.getValue() + column / 2 - 1);
-        // }
         return isRotate;
 
     }

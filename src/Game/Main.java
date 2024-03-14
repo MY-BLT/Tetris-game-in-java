@@ -20,28 +20,22 @@ public class Main {
             System.out.println("Choose an option:\n1)New game\n2)Exit");
             try {
                 command = input.nextInt();
+                mainMenu(command);
             } catch (InputMismatchException e) {
                 System.out.print("Please enter the valid number");
-                continue;
             } finally {
                 System.out.print("\033[H\033[2J"); // clear the screen
             }
-            mainMenu(command);
             
         } while (command != 2);
-        
-        // game.play();
-    //     Board board = new Board();
-    //     board.setBoard();
-    //    board.printBoard(board.getBoard());
         input.close();
     }
 
     public static void mainMenu(int command) {
-        Game1 game = new Game1();
+        Game game = new Game();
         switch (command) {
             case NEW_GAME:
-                game = new Game1(); 
+                game = new Game(); 
                 game.play();
                 break;
             case EXIT:

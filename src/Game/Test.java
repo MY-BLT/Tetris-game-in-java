@@ -7,6 +7,15 @@ public class Test {
             System.out.println(i + "...................");
             Shape shape = new Shape();
             shape.setShape();
+            for (int j = 0; j < shape.getRow(); j++) {
+                for (int j2 = 0; j2 < shape.getColumn(); j2++) {
+                    if (shape.getShape()[j][j2])
+                        System.out.print("* ");
+                    else 
+                        System.out.print("  ");
+                }
+                System.out.println();
+            }
             i++;
     
     }

@@ -27,12 +27,6 @@ public class Board {
      * @param row  row of the shape
      */
     public void setBoard(boolean[][] shape, int column, int row) {
-        // Shape shape = new Shape();
-        // shape.setShape();
-
-        // int row = shape.getRow();
-        // int column = shape.getColumn();
-
         startRow = 5 - row;
         startColumn = rand.nextInt(boardWidth - column - 1) + 1;
 
@@ -80,8 +74,7 @@ public class Board {
                 }
             }
         }
-
-
+        
     /**
      * <p>print the board that have set</p>
      */
@@ -107,9 +100,6 @@ public class Board {
         return board;
     }
     
-    /** 
-     * @return int
-     */
     public int getBoardHeight() {
         return boardHeight;
     }
