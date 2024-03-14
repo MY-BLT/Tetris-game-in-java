@@ -30,7 +30,7 @@ import java.util.Scanner;
  * This class is responsible for updating the board and executing actions on the
  * board during the game.
  */
-public class Game1 {
+public class Game {
     Scanner input = new Scanner(System.in);
 
     private Board board = new Board();
@@ -251,8 +251,7 @@ public class Game1 {
             case MOVE_LEFT:
                 for (int i = topShape; i < topShape + row; i++) {
                     for (int j = leftShape; j < leftShape + column; j++) {
-                        if (leftShape - 1 == 0 ||
-                                currentBoard[i][j] == SHAPE_CELL && currentBoard[i][j - 1] == FULL_CELL)
+                        if (currentBoard[i][j] == SHAPE_CELL && currentBoard[i][j - 1] == FULL_CELL)
                             return false;
                     }
                 }
@@ -260,8 +259,7 @@ public class Game1 {
             case MOVE_RIGHT:
                 for (int i = topShape; i < topShape + row; i++) {
                     for (int j = leftShape; j < leftShape + column; j++) {
-                        if (leftShape + column == width - 1
-                                || currentBoard[i][j] == SHAPE_CELL && currentBoard[i][j + 1] == FULL_CELL)
+                        if (currentBoard[i][j] == SHAPE_CELL && currentBoard[i][j + 1] == FULL_CELL)
                             return false;
                     }
                 }
@@ -269,8 +267,7 @@ public class Game1 {
             case MOVE_DOWN:
                 for (int j = topShape; j < topShape + row; j++) {
                     for (int i = leftShape; i < leftShape + column; i++) {
-                        if (currentBoard[j][i] == SHAPE_CELL
-                                && currentBoard[j + 1][i] == FULL_CELL)
+                        if (currentBoard[j][i] == SHAPE_CELL && currentBoard[j + 1][i] == FULL_CELL)
                             return false;
                     }
                 }
