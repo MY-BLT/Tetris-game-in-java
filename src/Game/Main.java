@@ -23,6 +23,7 @@ public class Main {
                 mainMenu(command);
             } catch (InputMismatchException e) {
                 System.out.print("Please enter the valid number");
+                input.nextLine();
             } finally {
                 System.out.print("\033[H\033[2J"); // clear the screen
             }
