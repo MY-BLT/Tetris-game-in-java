@@ -135,9 +135,10 @@ public class Game {
                     topShape = board.getStartRow();
                 }
             }
+            System.out.println("\033[H\033[2J");
         } while (!isGameOver);
     }
-
+    
     /**
      * The function `checkGameOver` checks if the game is over based on the current
      * board state and
@@ -165,6 +166,7 @@ public class Game {
             for (int j = 0; j < currentBoard[i].length; j++) {
                 if (currentBoard[i][j] == FULL_CELL || score < 0) {
                     System.out.println("YOU ARE GAME OVER....");
+                    board.printBoard(currentBoard);
                     try {
                         Thread.sleep(6000);
                         System.out.print("\033[H\033[2J"); // clear the screen
