@@ -15,7 +15,7 @@ Tetris is a classic puzzle game where players must arrange falling blocks (tetro
 ## Installation
 1. Clone the repository:
    
-   [git clone](https://github.com/MYasin-BLoghmani/tetris-java.git)
+   [git clone](https://github.com/MYasin-BLoghmani/Tetris-game-in-java)
    
 2. Navigate to the project directory:
    
@@ -52,4 +52,4 @@ Tetris is a classic puzzle game where players must arrange falling blocks (tetro
 Feel free to fork the repository and submit pull requests!
 
 ## Contact
-For questions or feedback, you can reach me at [my e-mail](loghmani1384@example.com).
+For questions or feedback, you can reach me at [my e-mail](loghmani1384@gmail.com).
