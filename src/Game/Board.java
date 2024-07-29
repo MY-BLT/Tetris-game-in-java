@@ -49,18 +49,6 @@ public class Board {
             }
         }
 
-        /**
-         * The function `updateBoard` updates a game board with a given shape at a specified row and
-         * column position.
-         * 
-         * @param shape A 2D boolean array representing the shape to be updated on the board. The shape
-         * is defined by true values in the array.
-         * @param row The `row` parameter in the `updateBoard` method represents the number of rows in
-         * the shape that needs to be updated on the game board.
-         * @param column The `column` parameter in the `updateBoard` method represents the number of
-         * columns in the shape that you want to update on the board. It is used to determine the width
-         * of the shape that will be placed on the board starting from the specified column index.
-         */
         public void updateBoard(boolean[][] shape , int row, int column) {
             startRow = 5 - row;
             startColumn = rand.nextInt(boardWidth - column - 1) + 1;
