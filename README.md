@@ -48,6 +48,9 @@ Tetris is a classic puzzle game where players must arrange falling blocks (tetro
 ![image](https://github.com/user-attachments/assets/ae559572-1c95-42d4-9af1-b6c017d0a748)
 ![image](https://github.com/user-attachments/assets/f46497d6-2f48-41b9-a1ce-18aa75a9f8a1)
 
+## Video Demo 
+[Tetris game.webm](https://github.com/user-attachments/assets/7d16fbbc-97f9-4ed2-96d4-53cda7d8963b)
+
 ## Contributing
 Feel free to fork the repository and submit pull requests!
 
